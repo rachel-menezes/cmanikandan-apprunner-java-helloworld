@@ -19,7 +19,6 @@ public class DemoApplication implements AsyncConfigurer {
         final Logger log = LoggerFactory.getLogger(DemoApplication.class);
         log.info("Before Starting application");
 		SpringApplication.run(DemoApplication.class, args);
-        log.info("Started application");
     }
 
     @Override
