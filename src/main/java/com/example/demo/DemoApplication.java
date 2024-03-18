@@ -25,8 +25,8 @@ public class DemoApplication implements AsyncConfigurer {
     public Executor getAsyncExecutor() {
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
         executor.setCorePoolSize(10);
-        executor.setMaxPoolSize(10);
-        executor.setQueueCapacity(50);
+        executor.setMaxPoolSize(100);
+        executor.setQueueCapacity(5000);
         executor.setThreadNamePrefix("ThreadNum-");
         executor.initialize();
         return executor;
